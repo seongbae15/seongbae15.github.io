@@ -27,7 +27,7 @@ export type SiteConfig = {
     logo?: Image;
     title: string;
     subtitle?: string;
-    description: string;
+    description?: string;
     image?: Image;
     headerNavLinks?: Link[];
     footerNavLinks?: Link[];
@@ -40,9 +40,9 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     website: 'https://example.com',
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Seongba\’s Dev Notes',
+    subtitle: 'Explore, Build, Share',
+    // description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
@@ -53,12 +53,12 @@ const siteConfig: SiteConfig = {
             href: '/'
         },
         {
-            text: 'Projects',
-            href: '/projects'
-        },
-        {
             text: 'Blog',
             href: '/blog'
+        },
+        {
+            text: 'Projects',
+            href: '/projects'
         },
         {
             text: 'Tags',
@@ -98,18 +98,18 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        title: 'Welcome to my blog.',
+        text: "I'm **Seongbae Park**, an **AI Engineer** specializing in Computer Vision, focused on building intelligent and interactive experiences. With a deep curiosity and hands-on mindset, I explore ideas, build practical tools, and share what I learn along the way.\nI value clarity, creativity, and continuous growth — in both software development and self-branding. Feel free to explore some of my coding endeavors on <a href='https://github.com/seongbae15' target='_blank'>**GitHub**</a> or follow me on <a href='https://twitter.com/Seongbae_P' target='_blank'>**Twitter/X**</a>.",
         image: {
-            src: '/hero.jpeg',
+            src: '/profile.jpg',
             alt: 'A person sitting at a desk in front of a computer'
-        },
-        actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
-        ]
+        }
+        // actions: [
+        //     {
+        //         text: 'Get in Touch',
+        //         href: '/contact'
+        //     }
+        // ]
     },
     subscribe: {
         title: 'Subscribe to Dante Newsletter',
